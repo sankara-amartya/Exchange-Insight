@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="amount">
+                <p>Enter amount</p>
+                <input value="1" type="text">
+            </div>
+            <div class="from">
+                <p>From</p>
+                <select name="From"></select>
+            </div>
+            <div class="picex">
+                <img src="exchange.png" alt="Exchange">
+            </div>
+            <div class="to">
+                <p>To</p>
+                <select name="To"></select>
+            </div>
+        </div>
+
+        <button id="convert-button" class="convert-btn">Convert</button>
+
+        <div class="after-conversion" style="display: none;">
+            <h3>Conversion Result</h3>
+            <p id="conversion-result"></p>
+        </div>
+
+        <div class="second">
+            <h3>Currency News</h3>
+            <div id="news-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
